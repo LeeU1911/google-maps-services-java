@@ -24,6 +24,7 @@ apply plugin: 'com.github.kt3k.coveralls'
 apply plugin: 'com.github.sherter.google-java-format'
 
 archivesBaseName = 'google-maps-services'
+version = '0.9.5'
 group = 'com.google.maps'
 sourceCompatibility = 1.8
 
@@ -145,7 +146,7 @@ publishing {
             groupId group
             artifactId 'google-maps-services'
             version version
-            artifact("$buildDir/libs/google-maps-services-" + project.version + ".jar")
+            artifact("$buildDir/libs/google-maps-services-" + version + ".jar")
         }
     }
     repositories {
